@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.row {
+	max-width: 1000px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+.row::before,
+.row::after{
+	display: table;
+	content: '';
+}
+
+.row::after{
+	clear: both;
+}
+
+.col-3{
+	float: left;
+	padding-left: 1.0416666%;
+	padding-right: 1.0416666%;
+}
+
+@media only screen and (min-width: 640px){
+	.col-3 {
+		width: 25%;
+	}
+}
+
